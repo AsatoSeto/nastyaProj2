@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{A8CE34DE-05D4-4B7C-B219-6E5FAA1E04E8}|Default">
+  <MonoDevelop.Ide.ItemProperties.ProjectNastya.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjectNastya/MainPage.xaml">
+    <Files>
+      <File FileName="ProjectNastya/MainPage.xaml" Line="35" Column="40" />
+      <File FileName="ProjectNastya/MainPage.xaml.cs" Line="22" Column="1" />
+      <File FileName="ProjectNastya/MyPage.xaml" Line="10" Column="49" />
+      <File FileName="ProjectNastya/MyPage.xaml.cs" Line="70" Column="12" />
+      <File FileName="ProjectNastya/App.xaml.cs" Line="13" Column="59" />
+      <File FileName="ProjectNastya.Android/Properties/AndroidManifest.xml" />
+      <File FileName="ProjectNastya/SaveAndroid.cs" Line="10" Column="30" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProjectNastya" expanded="True">
+            <Node name="ProjectNastya" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" selected="True" />
+              <Node name="MyPage.xaml" expanded="True" />
+            </Node>
+            <Node name="ProjectNastya.Android" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="ProjectNastya.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

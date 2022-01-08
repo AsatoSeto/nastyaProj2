@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "dgSpecHash": "03LF0RhdRn2Qg8ZgZM8jF4cZA2sbWER0SSbZ8LVTaq63FvKRBbeyWHQi7JiJIEYopgLswG+DRTJGy025+HcLjg==",
+  "success": true,
+  "projectFilePath": "/Users/moklyakov/projects/ProjectNastya/ProjectNastya/ProjectNastya.csproj",
+  "expectedPackageFiles": [
+    "/Users/moklyakov/.nuget/packages/itextsharp-lgpl/4.1.6/itextsharp-lgpl.4.1.6.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/pdfsharp.xamarin.forms/1.0.0/pdfsharp.xamarin.forms.1.0.0.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/pdfsharpcore/1.1.18/pdfsharpcore.1.1.18.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/sixlabors.core/1.0.0-beta0007/sixlabors.core.1.0.0-beta0007.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/sixlabors.imagesharp/1.0.0-beta0006/sixlabors.imagesharp.1.0.0-beta0006.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/syncfusion.licensing/19.4.0.41/syncfusion.licensing.19.4.0.41.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/syncfusion.xamarin.compression/19.4.0.41/syncfusion.xamarin.compression.19.4.0.41.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/syncfusion.xamarin.pdf/19.4.0.41/syncfusion.xamarin.pdf.19.4.0.41.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/system.memory/4.5.1/system.memory.4.5.1.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.1/system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/moklyakov/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'iTextSharp-LGPL 4.1.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "iTextSharp-LGPL",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

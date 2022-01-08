@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Syncfusion.Xamarin.Pdf" Version="19.4.0.41" />
+    <PackageReference Include="iTextSharp-LGPL" Version="4.1.6" />
+    <PackageReference Include="PdfSharp.Xamarin.Forms" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Syncfusion.Xamarin.Pdf" />
+    <None Remove="iTextSharp-LGPL" />
+    <None Remove="PdfSharp.Xamarin.Forms" />
+    <None Remove="Assets\arial.ttf" />
+    <None Remove="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\arial.ttf" />
+  </ItemGroup>
+</Project>

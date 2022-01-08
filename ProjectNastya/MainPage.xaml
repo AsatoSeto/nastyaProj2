@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProjectNastya"
+             x:Class="ProjectNastya.MainPage">
+    <StackLayout MinimumWidthRequest="1">
+        <FlexLayout Padding="50,100,0,0">
+            <Label Text="Участок приемки:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <Editor x:Name="uchastok"  Placeholder="name" FontSize="Medium"/>
+        </FlexLayout>
+         <FlexLayout Padding="50,0,0,0">
+            <Label Text="Мастер:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <Editor x:Name="master" Placeholder="name" FontSize="Medium"/>
+        </FlexLayout>
+         <FlexLayout Padding="50,0,0,0">
+            <Label Text="Контроллер ОТК:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <Editor x:Name="otkController" Placeholder="name" FontSize="Medium"/>
+        </FlexLayout>
+        <FlexLayout Padding="50,0,0,0">
+            <Label Text="Бригада:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <Picker x:Name="pickerBrigada" WidthRequest="100" >
+                <Picker.SelectedIndex>
+					<x:Int32>0</x:Int32>
+</Picker.SelectedIndex>
+                <Picker.Items>
+                    <x:String>Бригада 1</x:String>
+                    <x:String>Бригада 2</x:String>
+                    <x:String>Бригада 3</x:String>
+                    <x:String>Димооооон</x:String>
+                </Picker.Items>
+            </Picker>
+        </FlexLayout>
+         <FlexLayout Padding="50,10,0,0">
+            <Label Text="Смена" FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <Picker x:Name="pickerSmena" WidthRequest="100" VerticalOptions="Fill" Unfocused="pickerSmena_SelectedIndexChanged" >
+                <Picker.SelectedIndex>
+					<x:Int32>0</x:Int32>
+                </Picker.SelectedIndex>
+                <Picker.Items>
+                    <x:String>Смена 1</x:String>
+                    <x:String>Смена 2</x:String>
+                    <x:String>Смена 3</x:String>
+                    <x:String>Смена 4</x:String>
+                </Picker.Items>
+            </Picker>
+        </FlexLayout>
+       <Button x:Name="ButNext" Text="Next" >
+		
+       </Button>
+    </StackLayout>
+
+</ContentPage>

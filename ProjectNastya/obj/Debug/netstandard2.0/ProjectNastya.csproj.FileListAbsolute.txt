@@ -1,0 +1,16 @@
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/bin/Debug/netstandard2.0/ProjectNastya.deps.json
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/bin/Debug/netstandard2.0/ProjectNastya.dll
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/bin/Debug/netstandard2.0/ref/ProjectNastya.dll
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/bin/Debug/netstandard2.0/ProjectNastya.pdb
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/ProjectNastya.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/MyPage.xaml.g.cs
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/ProjectNastya.AssemblyInfoInputs.cache
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/ProjectNastya.AssemblyInfo.cs
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/ProjectNastya.csproj.CoreCompileInputs.cache
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/ProjectNastya.dll
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/ref/ProjectNastya.dll
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/ProjectNastya.pdb
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya/obj/Debug/netstandard2.0/ProjectNastya.csproj.AssemblyReference.cache

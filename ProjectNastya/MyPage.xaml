@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ProjectNastya.MyPage">
+    <ContentPage.Content>
+        <StackLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Нормативный док.:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+                <Picker x:Name="pickerNormatDock" WidthRequest="150" >
+                <Picker.SelectedIndex>
+					<x:Int32>0</x:Int32>
+                </Picker.SelectedIndex>
+                <Picker.Items>
+                    <x:String>Документ 1</x:String>
+                    <x:String>Документ 2</x:String>
+                    <x:String>Документ 3</x:String>
+                    <x:String>Документ 4</x:String>
+                </Picker.Items>
+            </Picker>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Тип резьбы:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+                <Picker x:Name="pickerЕhread" WidthRequest="100" >
+                <Picker.SelectedIndex>
+					<x:Int32>0</x:Int32>
+                </Picker.SelectedIndex>
+                <Picker.Items>
+                    <x:String>Резьба 1</x:String>
+                    <x:String>Резьба 2</x:String>
+                    <x:String>Резьба 3</x:String>
+                    <x:String>Резьба 4</x:String>
+                </Picker.Items>
+            </Picker>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Группа прочности:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+                <Picker x:Name="pickerEndurance" WidthRequest="100" >
+                <Picker.SelectedIndex>
+					<x:Int32>0</x:Int32>
+                </Picker.SelectedIndex>
+                <Picker.Items>
+                    <x:String>Прочность 1</x:String>
+                    <x:String>Прочность 2</x:String>
+                    <x:String>Прочность 3</x:String>
+                    <x:String>Прочность 4</x:String>
+                </Picker.Items>
+            </Picker>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Диаметр:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="diam" Placeholder="мм" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Стенка:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="wall" Placeholder="мм" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Номер заказа:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="orderNum" Placeholder="№ заказа" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Номер партии:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="partNum" Placeholder="№ партии" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Плавка:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="plavka" Placeholder="плавка" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Всего:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="all" Placeholder="шт" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Годные:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="usable" Placeholder="шт" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Негодные:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="unsuitable" Placeholder="шт" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Пленка:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="tape" Placeholder="шт" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Чернота:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="blackness" Placeholder="шт" FontSize="Medium"/>
+           </FlexLayout>
+           <FlexLayout Padding="10,-10,0,0">
+               <Label Text="Забитая:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+               <Editor x:Name="clogged" Placeholder="шт" FontSize="Medium"/>
+                <Button x:Name="GEN" Text="Generate Document"  HorizontalOptions="End"/>
+               
+           </FlexLayout>
+        </StackLayout>
+          
+    </ContentPage.Content>
+</ContentPage>
