@@ -15,10 +15,14 @@ namespace ProjectNastya
     
     public partial class MyPage : ContentPage
     {
-        public MyPage()
+        public string Smena;
+        public MyPage(string smena)
         {
+            //ProgClass a = new ProgClass();
+
             InitializeComponent();
             GEN.Clicked += generatePDF;
+            Smena = smena;
         }
         public void generatePDF(object sender, System.EventArgs e)
         {
@@ -40,8 +44,6 @@ namespace ProjectNastya
             //Create PdfGrid
             PdfGrid pdfGrid = new PdfGrid();
 
-            ProgClass a = new ProgClass();
-            
 
             //Draw grid to the page of PDF document
             PdfGridLayoutResult result = pdfGrid.Draw(page, new Syncfusion.Drawing.PointF(0, 20));
@@ -69,14 +71,14 @@ namespace ProjectNastya
             //Add rows
            
             pdfLightTable.Rows.Add(new object[] { pickerNormatDock.SelectedItem.ToString(),
-              a.OPA()  ,
-            "1",
-            "1",
-            "1",
-            "1",
-            "1",
-            "1",
-            "1",});
+             Smena ,
+            all.Text,
+            usable.Text,
+            unsuitable.Text,
+            brak.Text,
+            tape.Text,
+            blackness.Text,
+            "0",});
 
             //pdfLightTable.Rows.Add(new object[] { "#E02", "@Thomas", "$2000" });
 

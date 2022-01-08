@@ -13,30 +13,25 @@ namespace ProjectNastya
 {
     public partial class MainPage : ContentPage
     {
-        public string A;
-       
+        public string Smena;
         public MainPage()
         {
             InitializeComponent();
             ButNext.Clicked+= OnButtonClicked;
+            
         }
        
         private async void OnButtonClicked(object sender, System.EventArgs e)
         {
-            await  Navigation.PushAsync(new MyPage());
+            await  Navigation.PushAsync(new MyPage(Smena));
         }
         private  void pickerSmena_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            A = pickerSmena.SelectedItem.ToString();
+            Smena = pickerSmena.SelectedItem.ToString();
         }
 
     }
-    public class ProgClass {
-        public string OPA() {
-            MainPage a = new MainPage();
-            return a.A;
-        }
-    }
+  
   
    
 }
