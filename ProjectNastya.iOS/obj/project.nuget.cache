@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "IwpWdh1o0B+OqXeZG+RSDvwSfARhAQdE/DIBQFgT66+rHHEDhfgE7C9CKrLsteXb6CrHDEJLEkhgKtS2Sv9x9A==",
-  "success": false,
+  "dgSpecHash": "+0NeTQCfME2YDb0uNuMekcYgQaxunwFLtcA38GhNDGiLl5Ab+cMOqkZTqKUFFHB8xvdOIRbabt4pwMv3dLQ6fQ==",
+  "success": true,
   "projectFilePath": "/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/ProjectNastya.iOS.csproj",
   "expectedPackageFiles": [
-    "/Users/moklyakov/.nuget/packages/itextsharp-lgpl/4.1.6/itextsharp-lgpl.4.1.6.nupkg.sha512",
     "/Users/moklyakov/.nuget/packages/pdfsharp.xamarin.forms/1.0.0/pdfsharp.xamarin.forms.1.0.0.nupkg.sha512",
     "/Users/moklyakov/.nuget/packages/pdfsharpcore/1.1.18/pdfsharpcore.1.1.18.nupkg.sha512",
     "/Users/moklyakov/.nuget/packages/sixlabors.core/1.0.0-beta0007/sixlabors.core.1.0.0-beta0007.nupkg.sha512",
@@ -19,42 +18,5 @@
     "/Users/moklyakov/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
     "/Users/moklyakov/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package iTextSharp-LGPL 4.1.6 is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0). Package iTextSharp-LGPL 4.1.6 supports: net (.NETFramework,Version=v0.0)",
-      "libraryId": "iTextSharp-LGPL",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package iTextSharp-LGPL 4.1.6 is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0) / win. Package iTextSharp-LGPL 4.1.6 supports: net (.NETFramework,Version=v0.0)",
-      "libraryId": "iTextSharp-LGPL",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0/win"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package iTextSharp-LGPL 4.1.6 is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0) / win-x64. Package iTextSharp-LGPL 4.1.6 supports: net (.NETFramework,Version=v0.0)",
-      "libraryId": "iTextSharp-LGPL",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0/win-x64"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package iTextSharp-LGPL 4.1.6 is not compatible with xamarinios10 (Xamarin.iOS,Version=v1.0) / win-x86. Package iTextSharp-LGPL 4.1.6 supports: net (.NETFramework,Version=v0.0)",
-      "libraryId": "iTextSharp-LGPL",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  "logs": []
 }

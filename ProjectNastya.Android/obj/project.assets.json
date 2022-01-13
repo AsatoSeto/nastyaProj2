@@ -2,9 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v11.0": {
-      "iTextSharp-LGPL/4.1.6": {
-        "type": "package"
-      },
       "PdfSharp.Xamarin.Forms/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -1098,8 +1095,7 @@
           "PdfSharp.Xamarin.Forms": "1.0.0",
           "Syncfusion.Xamarin.Pdf": "19.4.0.41",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "iTextSharp-LGPL": "4.1.6"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
           "bin/placeholder/ProjectNastya.dll": {}
@@ -1111,18 +1107,6 @@
     }
   },
   "libraries": {
-    "iTextSharp-LGPL/4.1.6": {
-      "sha512": "35STyoGKJOX1oTUWHOzn8/I1NXQMbkxKZfBsYwj8ZjOICVEZIi88wfOekQbYeU6MK0VOoZrMMO1e7KQVjJSIxQ==",
-      "type": "package",
-      "path": "itextsharp-lgpl/4.1.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "itextsharp-lgpl.4.1.6.nupkg.sha512",
-        "itextsharp-lgpl.nuspec",
-        "lib/iTextSharp.dll"
-      ]
-    },
     "PdfSharp.Xamarin.Forms/1.0.0": {
       "sha512": "Y0/9vWlKnmPqo8KUDRV6ds7aJPFBh+wgKUYod8OfLTuKReQ4n6QMJ6hx6F+2wdVZgfczam6aHc3pub3BG8xwCQ==",
       "type": "package",
@@ -2546,16 +2530,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package iTextSharp-LGPL 4.1.6 is not compatible with monoandroid11.0 (MonoAndroid,Version=v11.0). Package iTextSharp-LGPL 4.1.6 supports: net (.NETFramework,Version=v0.0)",
-      "libraryId": "iTextSharp-LGPL",
-      "targetGraphs": [
-        "MonoAndroid,Version=v11.0"
-      ]
-    }
-  ]
+  }
 }

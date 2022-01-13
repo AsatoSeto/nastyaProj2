@@ -107,10 +107,6 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
-            },
-            "iTextSharp-LGPL": {
-              "target": "Package",
-              "version": "[4.1.6, )"
             }
           },
           "imports": [

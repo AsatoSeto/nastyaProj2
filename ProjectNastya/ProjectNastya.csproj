@@ -15,7 +15,6 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="Syncfusion.Xamarin.Pdf" Version="19.4.0.41" />
-    <PackageReference Include="iTextSharp-LGPL" Version="4.1.6" />
     <PackageReference Include="PdfSharp.Xamarin.Forms" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>

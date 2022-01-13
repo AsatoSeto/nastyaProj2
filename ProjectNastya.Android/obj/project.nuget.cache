@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "u8ztMf1YgZNnK7yO9zi9peFqWVA1di0OWh4CcMm/ZMGDFkadw4mzaelP7w15TQkszvQOdcIdncr1NJzSNPx+Rw==",
-  "success": false,
+  "dgSpecHash": "amcPAEMKWF4J//xCAoanBXWi1uhlwFn4IlhyVwUp5dGrwUzPG1jNRFs/WdX4E6gNhZeGO2bKEpPQxZK9EP4fwg==",
+  "success": true,
   "projectFilePath": "/Users/moklyakov/projects/ProjectNastya/ProjectNastya.Android/ProjectNastya.Android.csproj",
   "expectedPackageFiles": [
-    "/Users/moklyakov/.nuget/packages/itextsharp-lgpl/4.1.6/itextsharp-lgpl.4.1.6.nupkg.sha512",
     "/Users/moklyakov/.nuget/packages/pdfsharp.xamarin.forms/1.0.0/pdfsharp.xamarin.forms.1.0.0.nupkg.sha512",
     "/Users/moklyakov/.nuget/packages/pdfsharpcore/1.1.18/pdfsharpcore.1.1.18.nupkg.sha512",
     "/Users/moklyakov/.nuget/packages/sixlabors.core/1.0.0-beta0007/sixlabors.core.1.0.0-beta0007.nupkg.sha512",
@@ -65,15 +64,5 @@
     "/Users/moklyakov/.nuget/packages/xamarin.google.android.material/1.2.1.1/xamarin.google.android.material.1.2.1.1.nupkg.sha512",
     "/Users/moklyakov/.nuget/packages/xamarin.google.guava.listenablefuture/1.0.0.2/xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package iTextSharp-LGPL 4.1.6 is not compatible with monoandroid11.0 (MonoAndroid,Version=v11.0). Package iTextSharp-LGPL 4.1.6 supports: net (.NETFramework,Version=v0.0)",
-      "libraryId": "iTextSharp-LGPL",
-      "targetGraphs": [
-        "MonoAndroid,Version=v11.0"
-      ]
-    }
-  ]
+  "logs": []
 }
