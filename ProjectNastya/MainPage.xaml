@@ -31,7 +31,7 @@
             </Picker>
         </FlexLayout>
          <FlexLayout Padding="50,10,0,0">
-             <Label x:Name="opach" Text="Участок приемки:" FontSize="Medium" Padding="10, 10, 0, 0"/>
+             <!--<Label x:Name="opach" Text="Участок приемки:" FontSize="Medium" Padding="10, 10, 0, 0"/>-->
             <Label Text="Смена" FontSize="Medium" Padding="10, 10, 0, 0"/>
             <Picker x:Name="pickerSmena" WidthRequest="100" VerticalOptions="Fill" SelectedIndexChanged="pickerSmena_SelectedIndexChanged" >
                 <Picker.SelectedIndex>
