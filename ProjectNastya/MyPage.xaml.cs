@@ -16,16 +16,145 @@ namespace ProjectNastya
     public partial class MyPage : ContentPage
     {
         public string Smena;
-        public MyPage(string smena)
+        public string Master;
+        public string OTKController;
+        public string Brig;
+        public string Uchastok;
+        public string Date;
+
+
+        public MyPage(string smena, string brigada, string uchastok, string otkcontroller, string master, string date)
         {
             //ProgClass a = new ProgClass();
 
             InitializeComponent();
+            pickerNormatDock.SelectedIndex = 0;
+            pickerЕhread.SelectedIndex = 0;
+            pickerEndurance.SelectedIndex = 0;
+
             GEN.Clicked += generatePDF;
             Smena = smena;
+            Brig = brigada;
+            Uchastok = uchastok;
+            OTKController = otkcontroller;
+            Master = master;
+            Date = date;
+            initVars();
         }
-        public void generatePDF(object sender, System.EventArgs e)
+
+        private void initVars() {
+            diam.Text = "0";
+            wall.Text = "0";
+            orderNum.Text = "0";
+            partNum.Text = "0";
+            plavka.Text = "0";
+            all.Text = "0";
+            usable.Text = "0";
+            brak.Text = "0";
+            tape.Text = "0";
+            blackness.Text = "0";
+            clogged.Text = "0";
+            tugaya.Text = "0";
+
+            
+
+        }
+        private async void usableChanged(object sender, System.EventArgs e) {
+            if (String.IsNullOrWhiteSpace(all.Text)) {
+                await DisplayAlert("Ошибка", "Поле Всего не должно быть пустым", "OК");
+                return;
+            }
+            if (String.IsNullOrWhiteSpace(all.Text))
+            {
+                await DisplayAlert("Ошибка", "Поле Годных не должно быть пустым", "OК");
+                return;
+            }
+            if (0 >= Int64.Parse(all.Text))
+            {
+                await DisplayAlert("Ошибка", "Поле Всего не может быть меньше либо равно 0", "OК");
+                return;
+            }
+            if (Int64.Parse(usable.Text) > Int64.Parse(all.Text))
+            {
+                await DisplayAlert("Ошибка", "Поле Годных не может быть больше поля Всего", "OК");
+                return;
+            }
+            if (Int64.Parse(usable.Text) <= Int64.Parse(all.Text) && 0 <= Int64.Parse(usable.Text))
+            {
+                brak.Text = Convert.ToString(Int64.Parse(all.Text) - Int64.Parse(usable.Text));
+            }
+        }
+
+        private bool anyFieldIsEmpty() {
+            if (String.IsNullOrWhiteSpace(diam.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(wall.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(orderNum.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(partNum.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(plavka.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(all.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(usable.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(brak.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(tape.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(blackness.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(clogged.Text))
+            {
+                return true;
+            }
+            if (String.IsNullOrWhiteSpace(tugaya.Text))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public async void generatePDF(object sender, System.EventArgs e)
         {
+
+            if (anyFieldIsEmpty()) {
+                await DisplayAlert("Ошибка", "Все поля должны быть заполнены", "OК");
+                return;
+            }
+
+            if (brak.Text != "0") {
+                if ((Int64.Parse(tape.Text) +
+                    Int64.Parse(blackness.Text) +
+                    Int64.Parse(clogged.Text) +
+                    Int64.Parse(tugaya.Text)) != Int64.Parse(brak.Text))
+                {
+                    await DisplayAlert("Ошибка", "Сумма полей типов брака должна быть равна количеству отбракованных", "OК");
+                    return;
+                }
+            }
 
             //Create a new PDF document
             PdfDocument document = new PdfDocument();
@@ -37,25 +166,79 @@ namespace ProjectNastya
             Stream fontStream = typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("ProjectNastya.Assets.arial.ttf");
 
             //Create a new PdfTrueTypeFont instance
-            PdfTrueTypeFont font = new PdfTrueTypeFont(fontStream, 10);
+            PdfTrueTypeFont font = new PdfTrueTypeFont(fontStream, 8);
+            PdfTrueTypeFont middleFont = new PdfTrueTypeFont(fontStream, 12);
+
+            PdfTrueTypeFont fontUnderLine = new PdfTrueTypeFont(fontStream, 8, PdfFontStyle.Underline);
+           
+
+            PdfTrueTypeFont middleFontUnderLine = new PdfTrueTypeFont(fontStream, 12, PdfFontStyle.Underline);
+
 
             //Create a new bold stylePdfTrueTypeFont instance
-            PdfTrueTypeFont boldFont = new PdfTrueTypeFont(fontStream, 10, PdfFontStyle.Bold);
-            //Create PdfGrid
-            PdfGrid pdfGrid = new PdfGrid();
+            PdfTrueTypeFont boldFont = new PdfTrueTypeFont(fontStream, 8, PdfFontStyle.Bold);
+            PdfTrueTypeFont bigFont = new PdfTrueTypeFont(fontStream, 16, PdfFontStyle.Bold);
 
 
-            //Draw grid to the page of PDF document
-            PdfGridLayoutResult result = pdfGrid.Draw(page, new Syncfusion.Drawing.PointF(0, 20));
+            PdfTextElement textEl = new PdfTextElement("В-п участок");
+            textEl.Font = font;
+            textEl.Draw(page, new PointF(0, 0));
+
+            
+            PdfTextElement textEl2 = new PdfTextElement("Форма ТР-66");
+            textEl2.Font = fontUnderLine;
+            textEl2.Draw(page, new PointF(430, 0));
+
+            PdfTextElement textEl3 = new PdfTextElement("ОТК");
+            textEl3.Font = font;
+            textEl3.Draw(page, new PointF(448, 8));
+
+            PdfTextElement textEl4 = new PdfTextElement("Сведения");
+            textEl4.Font = bigFont;
+            textEl4.Draw(page, new PointF(220, 30));
+
+            PdfTextElement textEl5 = new PdfTextElement("С: ");
+            textEl5.Font = middleFont;
+            textEl5.Draw(page, new PointF(0, 75));
+
+            PdfTextElement textEl6 = new PdfTextElement(Uchastok);
+            textEl6.Font = middleFontUnderLine;
+            textEl6.Draw(page, new PointF(15, 75));
+
+            PdfTextElement textEl7 = new PdfTextElement("М-р: ");
+            textEl7.Font = middleFont;
+            textEl7.Draw(page, new PointF(350, 75));
+
+            PdfTextElement textEl8 = new PdfTextElement(Master);
+            textEl8.Font = middleFontUnderLine;
+            textEl8.Draw(page, new PointF(380, 75));
+
+
+
+            PdfTextElement textEl9 = new PdfTextElement("Дата: " + Date);
+            textEl9.Font = middleFont;
+            textEl9.Draw(page, new PointF(20, 200));
+
+            PdfTextElement textEl10 = new PdfTextElement("Контролер ОТК:");
+            textEl10.Font = middleFont;
+            textEl10.Draw(page, new PointF(300, 200));
+
+            PdfTextElement textEl11 = new PdfTextElement(OTKController);
+            textEl11.Font = middleFontUnderLine;
+            textEl11.Draw(page, new PointF(395, 200));
 
             //Declare a PdfLightTable
             PdfLightTable pdfLightTable = new PdfLightTable();
+
+
 
             //Set the Data source as direct
             pdfLightTable.DataSourceType = PdfLightTableDataSourceType.TableDirect;
 
             //Create columns
-            pdfLightTable.Columns.Add(new PdfColumn("Наименование операции"));
+            PdfColumn op = new PdfColumn("Наименование операции");
+            op.Width = 50;
+            pdfLightTable.Columns.Add(op);
             
             pdfLightTable.Columns.Add(new PdfColumn("Смена"));
            
@@ -68,17 +251,23 @@ namespace ProjectNastya
             pdfLightTable.Columns.Add(new PdfColumn("тугая"));
 
 
+            pdfLightTable.ColumnProportionalSizing = true;
+
             //Add rows
            
-            pdfLightTable.Rows.Add(new object[] { pickerNormatDock.SelectedItem.ToString(),
-             Smena ,
+            pdfLightTable.Rows.Add(new object[] {
+             pickerNormatDock.SelectedItem.ToString() + " " +
+             pickerЕhread.SelectedItem.ToString() + " " +
+             pickerEndurance.SelectedItem.ToString() + " Ø" + diam.Text + "x" + wall.Text +
+              " №:" + orderNum.Text + "\n #" + partNum.Text + " п" + plavka.Text,
+             Brig + " " + Smena ,
             all.Text,
             usable.Text,
-            unsuitable.Text,
             brak.Text,
             tape.Text,
             blackness.Text,
-            "0",});
+            clogged.Text,
+            tugaya.Text,});
 
             //pdfLightTable.Rows.Add(new object[] { "#E02", "@Thomas", "$2000" });
 
@@ -91,7 +280,7 @@ namespace ProjectNastya
             pdfLightTable.Style.DefaultStyle.Font = font;
 
             //Draw the PdfLightTable
-            pdfLightTable.Draw(result.Page, new PointF(0, result.Bounds.Bottom + 30));
+            pdfLightTable.Draw(page, new PointF(0, 100));
 
             MemoryStream stream = new MemoryStream();
 
@@ -105,40 +294,7 @@ namespace ProjectNastya
 
             //Save the stream as a file in the device and invoke it for viewing
             Xamarin.Forms.DependencyService.Get<ISave>().SaveAndView("Output.pdf", "application/pdf", stream);
-            //Customer customer = new Customer();
-            ////Create a new PDF document.
-            //PdfDocument doc = new PdfDocument();
-            ////Add a page.
-            //PdfPage page = doc.Pages.Add();
-            ////Create a PdfGrid.
-            //PdfLightTable pdfGrid = new PdfLightTable();
-            ////Add values to list
-            //List<object> data = new List<object>();
-            //Object row1 = new  { Operation = "Operation", Smena = "Smena", All = "Osmotrenno", Godno = "Godnih", Brak = "Brak", Plena = "Plena", Chernota = "Chernota", Zabita = "Zabita", Tugaya = "Tugaya" };
-            //Object row2 = new { ID = "E02", Name = "Thomas" };
-            //Object row3 = new { ID = "E03", Name = "Andrew" };
-            //Object row4 = new { ID = "E04", Name = "Paul" };
-            //Object row5 = new { ID = "E05", Name = "Gray" };
-            //data.Add(row1);
-            ////data.Add(row2);
-            ////data.Add(row3);
-            ////data.Add(row4);
-            ////data.Add(row5);
-            ////Add list to IEnumerable
-            //IEnumerable<object> dataTable = data;
-            ////Assign data source.
-            //pdfGrid.DataSource = dataTable;
-            ////Draw grid to the page of PDF document.
-            //pdfGrid.Draw(page, new PointF(10, 10));
-            //pdfGrid.Style.ShowHeader = true;
-            ////Save the PDF document to stream.
-            //MemoryStream stream = new MemoryStream();
-            //doc.Save(stream);
-            ////Close the document.
-            //doc.Close(true);
-
-            ////Save the stream as a file in the device and invoke it for viewing
-            //Xamarin.Forms.DependencyService.Get<ISave>().SaveAndView("Output.pdf", "application/pdf", stream);
+          
         }
 
        

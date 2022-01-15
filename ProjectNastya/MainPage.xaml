@@ -5,35 +5,34 @@
              x:Class="ProjectNastya.MainPage">
     <StackLayout MinimumWidthRequest="1">
         <FlexLayout Padding="50,100,0,0">
-            <Label Text="Участок приемки:" FontSize="Medium" Padding="10, 10, 0, 0"/>
-            <Editor x:Name="uchastok"  Placeholder="name" FontSize="Medium"/>
+            <Label Text="Участок приемки:  " FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <Editor x:Name="uchastok"  Placeholder="участок" WidthRequest="200" FontSize="Medium"/>
         </FlexLayout>
          <FlexLayout Padding="50,0,0,0">
-            <Label Text="Мастер:" FontSize="Medium" Padding="10, 10, 0, 0"/>
-            <Editor x:Name="master" Placeholder="name" FontSize="Medium"/>
+            <Label Text="Мастер:  " FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <Editor x:Name="master" Placeholder="ФИО мастера" WidthRequest="200" FontSize="Medium"/>
         </FlexLayout>
          <FlexLayout Padding="50,0,0,0">
             <Label Text="Контроллер ОТК:" FontSize="Medium" Padding="10, 10, 0, 0"/>
-            <Editor x:Name="otkController" Placeholder="name" FontSize="Medium"/>
+            <Editor x:Name="otkController" Placeholder="ФИО контролера" WidthRequest="200" FontSize="Medium"/>
         </FlexLayout>
         <FlexLayout Padding="50,0,0,0">
-            <Label Text="Бригада:" FontSize="Medium" Padding="10, 10, 0, 0"/>
-            <Picker x:Name="pickerBrigada" WidthRequest="100" >
+            <Label Text="Бригада:  " FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <Picker x:Name="pickerBrigada" WidthRequest="200" >
                 <Picker.SelectedIndex>
 					<x:Int32>0</x:Int32>
-</Picker.SelectedIndex>
+                </Picker.SelectedIndex>
                 <Picker.Items>
                     <x:String>Бригада 1</x:String>
                     <x:String>Бригада 2</x:String>
                     <x:String>Бригада 3</x:String>
-                    <x:String>Димооооон</x:String>
-                </Picker.Items>
+                    <x:String>Бригада 4</x:String>
+                 </Picker.Items>
             </Picker>
         </FlexLayout>
          <FlexLayout Padding="50,10,0,0">
-             <!--<Label x:Name="opach" Text="Участок приемки:" FontSize="Medium" Padding="10, 10, 0, 0"/>-->
-            <Label Text="Смена" FontSize="Medium" Padding="10, 10, 0, 0"/>
-            <Picker x:Name="pickerSmena" WidthRequest="100" VerticalOptions="Fill" SelectedIndexChanged="pickerSmena_SelectedIndexChanged" >
+            <Label Text="Смена:  " FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <Picker x:Name="pickerSmena" WidthRequest="200" VerticalOptions="Fill" SelectedIndexChanged="pickerSmena_SelectedIndexChanged" >
                 <Picker.SelectedIndex>
 					<x:Int32>0</x:Int32>
                 </Picker.SelectedIndex>
@@ -41,13 +40,13 @@
                     <x:String>Смена 1</x:String>
                     <x:String>Смена 2</x:String>
                     <x:String>Смена 3</x:String>
-                    <x:String>Смена 4</x:String>
                 </Picker.Items>
             </Picker>
         </FlexLayout>
-       <Button x:Name="ButNext" Text="Next" >
-		
-       </Button>
+         <FlexLayout Padding="50,10,0,0">
+            <Label Text="Дата:  " FontSize="Medium" Padding="10, 10, 0, 0"/>
+            <DatePicker x:Name="DatePick" Format="dd-MM-yyyy" />
+        </FlexLayout>
+       <Button x:Name="ButNext" Text="Next" />
     </StackLayout>
-
 </ContentPage>

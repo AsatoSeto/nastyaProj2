@@ -1,6 +1,5 @@
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/bin/iPhoneSimulator/Debug/ProjectNastya.iOS.exe
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/bin/iPhoneSimulator/Debug/ProjectNastya.iOS.pdb
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/bin/iPhoneSimulator/Debug/bundler.stamp
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/bin/iPhoneSimulator/Debug/PdfSharp.Xamarin.Forms.IOS.dll
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/bin/iPhoneSimulator/Debug/PdfSharp.Xamarin.Forms.IOS.pdb
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/bin/iPhoneSimulator/Debug/PdfSharp.Xamarin.Forms.dll
@@ -59,19 +58,19 @@
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/bin/iPhoneSimulator/Debug/ProjectNastya.dll
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/bin/iPhoneSimulator/Debug/ProjectNastya.pdb
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/actool/_ProcessedImageAssetsPath.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/ibtool/_ProcessedInterfaceDefinitionsPath.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/coremlc/_PartialAppManifest.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/coremlc/_BundleResourceWithLogicalName.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/coremlc/_ProcessedCoreMLModelsPath.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/_ProcessedBundleResourcesPath.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/_ProcessedContentPath.items
-/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/optimized/
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/ProjectNastya.iOS.csproj.AssemblyReference.cache
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/ProjectNastya.iOS.csproj.CoreCompileInputs.cache
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/ProjectNastya.iOS.csproj.CopyComplete
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/ProjectNastya.iOS.exe
 /Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/ProjectNastya.iOS.pdb
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/actool/_PartialAppManifest.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/actool/_BundleResourceWithLogicalName.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/actool/_ProcessedImageAssetsPath.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/ibtool/_BundleResourceWithLogicalName.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/ibtool/_ProcessedInterfaceDefinitionsPath.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/coremlc/_PartialAppManifest.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/coremlc/_BundleResourceWithLogicalName.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/_ProcessedBundleResourcesPath.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/_ProcessedContentPath.items
+/Users/moklyakov/projects/ProjectNastya/ProjectNastya.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-15.2/optimized/
