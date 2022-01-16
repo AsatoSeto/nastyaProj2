@@ -34,7 +34,7 @@ namespace ProjectNastya
 
             //Brigada = pickerBrigada.SelectedItem.ToString();
             Brig = pickerBrigada.SelectedItem.ToString();
-            Date = DatePick.Date.ToString();
+            Date =  DatePick.Date.Day + "." + DatePick.Date.Month + "." + DatePick.Date.Year;
             Master = master.Text;
             OTKController = otkController.Text;
             Uchastok = uchastok.Text;
